@@ -1,0 +1,53 @@
+{
+    "name": "Doodstream Post Converter Bot",
+    "description": "Upload on Doodstream...",
+    "keywords": [
+        "telegram",
+        "Doodstream",
+        "shortner"
+    ],
+    "website": "https://github.com/suryaprabhas1245",
+    "repository": "https://github.com/Suryaprabhas1245",
+    "env": {
+        "BOT_TOKEN": {
+            "description": "Your bot token (must add)",
+            "value": ""
+        },
+        "API_ID": {
+            "description": "Get this value from https://my.telegram.org",
+            "value": "12074491"
+        },
+        "API_HASH": {
+            "description": "Get this value from https://my.telegram.org",
+            "value": "9b0aa89b38396630bbfeae59d9385bd8"
+        },
+        "DOODSTREAM_API_KEY": {
+            "description": "Get this from https://doodstream.com/api-docs (must change)",
+            "value": "66186ezt1oza1ar9unrsk"
+        },
+         "BITLY_KEY": {
+            "description": "Bitly API See Readme for further details",
+            "value": "978e3d7d072bb605cb2dcb9482e6bc0ba9f6edf8"
+        },
+        "CHANNEL": {
+            "description": "Enter your telegram channel Username (must change and without @)",
+            "value": "Letest_all_web_series"
+        },
+        "HOWTO": {
+            "description": "Your 'Join Backup' Channel link",
+            "value": "@SarvottamaMovies"
+        }
+    },
+    "addons": [],
+    "buildpacks": [
+        {
+            "url": "heroku/python"
+        }
+    ],
+    "formation": {
+        "worker": {
+            "quantity": 1,
+            "size": "free"
+        }
+    }
+}
