@@ -28,8 +28,8 @@ bot = Client('Doodstream bot',
 @bot.on_message(filters.command('start') & filters.private)
 async def start(bot, message):
     await message.reply(
-        f"**Hey, {message.chat.first_name}!**\n\n"
-        "**I am a Doodstream post convertor bot and i am able to upload all direct links to Doodstream,just send me link or full post... \n Contact @SuryaPrabhas1245 **")
+        f"**Welcome ⚡, {message.chat.first_name}!**\n\n"
+        "**I am the fastest Doodstream Link converter!\nSend any post with Dood link,\ni will automagically convert the Dood links to your account ✨\n Made By @SuryaPrabhas1245 🔥 **")
 
 @bot.on_message(filters.command('help') & filters.private)
 async def start(bot, message):
@@ -41,7 +41,7 @@ async def start(bot, message):
 async def start(bot, message):
     await message.reply(
         f"**Hey, {message.chat.first_name}!**\n\n"
-        "**please contact me on @SuryaPrabhas1245**")
+        "**Message Me Your Problem @SuryaPrabhas1245**")
     
 @bot.on_message(filters.text & filters.private)
 async def Doodstream_uploader(bot, message):
